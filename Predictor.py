@@ -17,7 +17,7 @@ st.subheader("""5-Methylcytosine (m5c) is a modified cytosine base which is form
 """)
 
 #---------------------------------#
-image = Image.open('flow.png')
+image = Image.open('Flow_Chart.jpg')
 st.image(image)
 
 str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
