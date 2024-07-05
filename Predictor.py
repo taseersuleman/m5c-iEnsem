@@ -815,7 +815,7 @@ def input_seq():
             if output_proba[i] > 0.5:
                 st.info("Output = 5-Methylcytosine Site")
             else:
-                st.info("Output = Non-6-Methylcytosine Site")
+                st.info("Output = Non-5-Methylcytosine Site")
 
 
 input_seq()
