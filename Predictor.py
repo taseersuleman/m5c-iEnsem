@@ -812,7 +812,7 @@ def input_seq():
             st.subheader("Sequence")
             st.write(keeper[i])
 
-            if output_proba[i] > 0.5:
+            if output_proba[i] > 0.7:
                 st.info("Output = 5-Methylcytosine Site")
             else:
                 st.info("Output = Non-5-Methylcytosine Site")
