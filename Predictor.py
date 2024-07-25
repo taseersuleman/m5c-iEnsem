@@ -722,7 +722,7 @@ def input_seq():
     st.sidebar.subheader(("Input Sequence of any length"))
     sequence1 = st.sidebar.text_area("Sequence Input", height=200)
     str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
-    st.sidebar.subheader("Click the "Sample Sequence" button for sample RNA sequence")
+    st.sidebar.subheader("Click the Sample Sequence button for sample RNA sequence")
     if st.sidebar.button('Sample Sequence'):
         st.write(str22)
     abc = []
