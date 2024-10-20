@@ -719,6 +719,10 @@ i = 0
 allFVs = []
 
 def input_seq():
+
+
+
+    '''
     st.sidebar.subheader(("Input Sequence of any length"))
     sequence1 = st.sidebar.text_area("Sequence Input", height=200)
     str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
@@ -727,6 +731,22 @@ def input_seq():
         st.write(str22)
     abc = []
     if st.sidebar.button("Submit"):
+    '''
+    st.sidebar.subheader("Input Sequence of any length")
+
+    str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
+
+    # Button to automatically populate the text area with the sample sequence
+    if st.sidebar.button('Sample Sequence'):
+        # Fill the text area with the sample sequence
+        sequence1 = str22
+        # Display the updated text area with the sample sequence
+        sequence1 = st.sidebar.text_area("Sequence Input", value=sequence1, height=200)
+
+    # Submit button logic (optional)
+    if st.sidebar.button("Submit"):
+        #st.write(f"Submitted Sequence: {sequence1}")
+
         abc = sequence1
         count = []
         keeper = []
