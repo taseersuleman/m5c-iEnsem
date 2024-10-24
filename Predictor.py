@@ -721,22 +721,30 @@ allFVs = []
 def input_seq():
     st.subheader("Input Sequence of any length")
 
+    import streamlit as st
+
+    # Initialize the session state for the sequence if not already set
+    if 'sequence1' not in st.session_state:
+    st.session_state.sequence1 = ""
+
     # Sample RNA sequence
     str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
 
-    # Initialize sequence1 as an empty string to avoid UnboundLocalError
-    sequence1 = ""
-
     # Button to automatically populate the text area with the sample sequence
     if st.button('Sample Sequence'):
-        sequence1 = str22  # Assign sample sequence to sequence1
+    st.session_state.sequence1 = str22  # Assign sample sequence to session state
 
     # Text area for sequence input (with the option to be filled by the sample sequence)
-    sequence1 = st.text_area("Sequence Input", value=sequence1, height=200)
-    sequence1 = str(sequence1)
-    st.write(sequence1)
+    sequence1 = st.text_area("Sequence Input", value=st.session_state.sequence1, height=200)
+    st.session_state.sequence1 = sequence1  # Update session state with user input
+
+    # Display the current value of the sequence
+    st.write(st.session_state.sequence1)
+
     # Submit button logic
     if st.button("Submit"):
+        st.write(st.session_state.sequence1)  # Display the sequence when submitted
+
         # abc will be assigned the current value of sequence1 (whether manually entered or auto-filled)
         #abc = str(sequence1)
         st.write(sequence1)
