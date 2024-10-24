@@ -719,7 +719,7 @@ i = 0
 allFVs = []
 
 def input_seq():
-    st.sidebar.subheader("Input Sequence of any length")
+    st.subheader("Input Sequence of any length")
 
     # Sample RNA sequence
     str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
@@ -728,14 +728,14 @@ def input_seq():
     sequence1 = ""
 
     # Button to automatically populate the text area with the sample sequence
-    if st.sidebar.button('Sample Sequence'):
+    if st.button('Sample Sequence'):
         sequence1 = str22  # Assign sample sequence to sequence1
 
     # Text area for sequence input (with the option to be filled by the sample sequence)
-    sequence1 = st.sidebar.text_area("Sequence Input", value=sequence1, height=200)
+    sequence1 = st.text_area("Sequence Input", value=sequence1, height=200)
 
     # Submit button logic
-    if st.sidebar.button("Submit"):
+    if st.button("Submit"):
         # abc will be assigned the current value of sequence1 (whether manually entered or auto-filled)
         abc = str(sequence1)
         #st.write(f"Submitted Sequence: {abc}")
