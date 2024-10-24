@@ -719,9 +719,9 @@ i = 0
 allFVs = []
 
 def input_seq():
-    st.subheader("Input Sequence of any length")
+    #st.subheader("Input Sequence of any length")
 
-    import streamlit as st
+    
 
     # Initialize the session state for the sequence if not already set
     if 'sequence1' not in st.session_state:
