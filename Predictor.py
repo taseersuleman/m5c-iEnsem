@@ -734,13 +734,14 @@ def input_seq():
     # Text area for sequence input (with the option to be filled by the sample sequence)
     sequence1 = st.text_area("Sequence Input", value=sequence1, height=200)
     sequence1 = str(sequence1)
+    st.write(sequence1)
     # Submit button logic
     if st.button("Submit"):
         # abc will be assigned the current value of sequence1 (whether manually entered or auto-filled)
         #abc = str(sequence1)
         
         abc = sequence1
-        st.write(abc)
+        
         #st.write(f"Submitted Sequence: {abc}")
         count = []
         keeper = []
