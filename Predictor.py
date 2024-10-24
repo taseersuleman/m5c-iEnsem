@@ -737,7 +737,8 @@ def input_seq():
     # Submit button logic
     if st.button("Submit"):
         # abc will be assigned the current value of sequence1 (whether manually entered or auto-filled)
-        abc = str(sequence1)
+        #abc = str(sequence1)
+        abc = sequence1
         #st.write(f"Submitted Sequence: {abc}")
         count = []
         keeper = []
