@@ -725,14 +725,14 @@ def input_seq():
 
     # Initialize the session state for the sequence if not already set
     if 'sequence1' not in st.session_state:
-    st.session_state.sequence1 = ""
+        st.session_state.sequence1 = ""
 
     # Sample RNA sequence
     str22 = "CGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAU"
 
     # Button to automatically populate the text area with the sample sequence
     if st.button('Sample Sequence'):
-    st.session_state.sequence1 = str22  # Assign sample sequence to session state
+        st.session_state.sequence1 = str22  # Assign sample sequence to session state
 
     # Text area for sequence input (with the option to be filled by the sample sequence)
     sequence1 = st.text_area("Sequence Input", value=st.session_state.sequence1, height=200)
