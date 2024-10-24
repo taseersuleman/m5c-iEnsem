@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 
 st.title(
     """
-********** m5C-iEnsem ***********
+  ********* m5C-iEnsem **********
 """
 )
 #st.subheader("""5-Methylcytosine (m5c) is a modified cytosine base which is formed as the result of addition of methyl group added at position 5 of carbon. This modification is one of the most common PTM that used to occur in almost all types of RNA. The conventional laboratory methods do not provide quick reliable identification of m5c sites. However, the sequence data readiness has made it feasible to develop computationally intelligent models that optimize the identification process for accuracy and robustness. The present research focused on the development of in-silico methods built using ensemble models. The encoded data was then fed into ensemble models, which included bagging and boosting ensemble model as well. After that, the models were subjected to a rigorous evaluation process that included both independent set testing and 10-fold cross validation. The results revealed that Bagging ensemble model, outperformed revealing 100% accuracy while comparing with existing m5c predictors.
