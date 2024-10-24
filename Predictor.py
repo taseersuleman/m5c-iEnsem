@@ -739,17 +739,17 @@ def input_seq():
     st.session_state.sequence1 = sequence1  # Update session state with user input
 
     # Display the current value of the sequence
-    st.write(st.session_state.sequence1)
+    #st.write(st.session_state.sequence1)
 
     # Submit button logic
     if st.button("Submit"):
-        st.write(st.session_state.sequence1)  # Display the sequence when submitted
+        #st.write(st.session_state.sequence1)  # Display the sequence when submitted
 
         # abc will be assigned the current value of sequence1 (whether manually entered or auto-filled)
         #abc = str(sequence1)
-        st.write(sequence1)
+        #st.write(sequence1)
         abc = sequence1
-        st.write(sequence1)
+        #st.write(sequence1)
         #st.write(f"Submitted Sequence: {abc}")
         count = []
         keeper = []
